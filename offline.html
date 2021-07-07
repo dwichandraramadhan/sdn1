@@ -1,4 +1,4 @@
-const html = `<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
 </head>
@@ -7,7 +7,8 @@ const html = `<!DOCTYPE html>
 <div style=" font-family: Arial,Helvetica,sans-serif; font-size: 50px; ">Sepertinya Anda tidak tersambung ke  internet</div>
 <div style=" font-family: Georgia,'Times New Roman',serif; font-size: 20px; padding-top: 40px; ">Silahkan hidupkan data Anda Sekarang</div>
 </div> </body>`
-
+<script>
+const html = `
 async function handleRequest(request) {
   return new Response(html, {
     headers: {
@@ -19,3 +20,4 @@ async function handleRequest(request) {
 addEventListener("fetch", event => {
   return event.respondWith(handleRequest(event.request))
 })
+</script>
