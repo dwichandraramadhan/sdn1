@@ -2,7 +2,7 @@
     "theme_color": "#d0021b",
     "background_color": "#b8e986",
     "display": "standalone",
-    "prefer_related_applications": "false",
+    prefer_related_applications: false,
     "scope": "https://sdn1.girimoyo.com/",
     "start_url": "https://sdn1.girimoyo.com/",
     "name": "SDN 1 Girimoyo",
